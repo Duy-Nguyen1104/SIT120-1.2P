@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Concepts Implementation</title>
+</head>
+<body>
+
+
+<pre id="output"></pre>
+
+<script>
+    // String methods
+    let str = "This is my website!";
+    print("String Length: " + str.length);
+    print("Uppercase: " + str.toUpperCase());
+    print("Lowercase: " + str.toLowerCase());
+    print("Substring: " + str.substring(0,4));
+    print("Index of 'website': " + str.indexOf("website"));
+
+    // Number methods
+    let num = 144.75;
+    print("Fixed to 2 decimal places: " + num.toFixed(2));
+    print("Exponential notation: " + num.toExponential(3));
+    print("Rounded: " + Math.round(num));
+    print("Square root: " + Math.sqrt(num));
+    print("Highest number between 3 and 8: " + Math.max(3, 8));
+
+    // Array methods
+    let arr = [1, 2, 3, 4, 5];
+    print("Array length: " + arr.length);
+    print("Join as string: " + arr.join(" - "));
+    print("Index of 4: " + arr.indexOf(4));
+    print("Last index of 3: " + arr.lastIndexOf(3));
+    print("Reversed array: " + arr.reverse());
+
+    // Date methods
+    let currentDate = new Date();
+    print("Current date: " + currentDate);
+    print("Year: " + currentDate.getFullYear());
+    print("Month: " + currentDate.getMonth());
+    print("Day: " + currentDate.getDate());
+    print("Time: " + currentDate.toLocaleTimeString());
+
+    // Function methods
+    function greet(name) {
+        print("Hello, " + name + "!");
+    }
+
+
+    greet("Oz");
+
+    function print(message) {
+        document.getElementById("output").textContent += message + "\n";
+    }
+</script>
+
+</body>
+</html>
